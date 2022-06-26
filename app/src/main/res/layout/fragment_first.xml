@@ -8,6 +8,7 @@
     tools:context=".FirstFragment">
 
     <TextView
+        android:id="@+id/tv_first_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/fragment_1"
