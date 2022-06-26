@@ -8,6 +8,20 @@
     <fragment
         android:id="@+id/firstFragment"
         android:name="com.example.navigationsample.FirstFragment"
-        android:label="fragment_first_navigation"
-        tools:layout="@layout/fragment_first" />
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/fromFirstFragmentToSecondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.navigationsample.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/fromSecondFragmentToFirstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
 </navigation>
