@@ -23,5 +23,10 @@
         <action
             android:id="@+id/fromSecondFragmentToFirstFragment"
             app:destination="@id/firstFragment" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Name is empty" />
     </fragment>
 </navigation>

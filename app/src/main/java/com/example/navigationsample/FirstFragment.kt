@@ -14,8 +14,12 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val action = FirstFragmentDirections.fromFirstFragmentToSecondFragment(
+            name = "Gabriel"
+        )
+
         binding.tvFirstFragment.setOnClickListener {
-            //TODO
+            findNavController().navigate(action)
         }
 
     }
