@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_first">
         <action
             android:id="@+id/fromFirstFragmentToSecondFragment"
-            app:destination="@id/secondFragment" />
+            app:destination="@id/secondFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
 
     <fragment
